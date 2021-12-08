@@ -25,6 +25,7 @@ const url = process.env.MONGO_CONNECTION_URL;
 // }).catch(err => {
 // 	console.log('Connection failed...');
 // });
+
 (async () => {
 	try {
 		await mongoose.connect(url, {
@@ -36,6 +37,7 @@ const url = process.env.MONGO_CONNECTION_URL;
 		console.log("error: " + err);
 	}
 })();
+
  
 //Session store
 let mongoStore = new MongoDbStore({

@@ -68,7 +68,7 @@ export function initAdmin(socket) {
                     </div>
                 </td>
                 <td class="border px-4 py-2">
-                    ${moment(order.createdAt).format("hh:mm A")}
+                    ${moment(order.createdAt).format("MMMM Do YYYY, hh:mm A")}
                 </td>
                 <td class="border px-4 py-2">
                     ${order.paymentStatus ? "paid" : "Not paid"}
